@@ -23,11 +23,13 @@ cd boker-api
 ## 🚀 Usage
 
 ### 🦄 Developing with Uvicorn
+
 ```sh
 uvicorn boker_api:app --reload
 ```
 
 ### ⚓ Docking
+
 ```sh
 docker build -t boker-api-image .
 
@@ -47,7 +49,3 @@ docker run -d -p 80:80 boker-api-image
 Hayk Khachatryan – [hi@hayk.io](mailto:hi@hayk.io)
 
 [github.com/haykkh](https://github.com/haykkh/)
-
-## 📜 License
-
-Distributed under the MIT license. See ``LICENSE`` for more information.
