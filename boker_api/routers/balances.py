@@ -4,5 +4,5 @@ router = APIRouter()
 
 
 @router.get("/")
-async def read_topup():
+async def read_balances():
     return {"Hello": "balances"}
