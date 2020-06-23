@@ -1,7 +1,9 @@
 import os
 import asyncio
 from dotenv import load_dotenv
+
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from boker_api.routers import topup, balances
 from boker_api.bot import client
@@ -9,6 +11,17 @@ from boker_api.bot import client
 load_dotenv()
 
 app = FastAPI()
+
+origins = [
+    'https://localhost',
+    'https://boker.hayk.earth',
+    'https://boker.haykkh.vercel.app'
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins
+)
 
 
 @app.on_event("startup")
