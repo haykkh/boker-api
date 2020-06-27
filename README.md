@@ -36,6 +36,20 @@ docker build -t boker-api-image .
 docker run -d -p 80:80 boker-api-image
 ```
 
+#### 🎼 docker-compose
+
+##### 🔨 dev
+
+```sh
+docker-compose up
+```
+
+##### 🍔 production
+
+```sh
+docker-compose -f docker-compose-prod.yml up
+```
+
 ## 📝 Contributing
 
 1. Fork it (<https://github.com/haykkh/boker-api/fork>)
